@@ -9,7 +9,6 @@
   &:hover
     cursor: pointer
 
-
 #burgs
   transition: 200ms
   transition-timing-function: ease-in-out
@@ -26,28 +25,28 @@ svg:hover #burgs
   z-index: 1
   top: 0
   right: 0
-  background-color: #423D2F
+  background-color: #5B4F44
   overflow-x: hidden
   transition: 0.5s
 
 .overlay-content
   position: relative
-  top: 25%
   width: 100%
-  text-align: right
-  margin-top: 30px
-  padding-right: 190px
+  margin-top: 3em
+  padding: 6.5em
 
 .overlay a
   padding: 8px
   text-decoration: none
-  //font-family: MrsEavesXLSerifOT-Heavy
-  //font-family: $heavy
-  font-size: 4em
-  letter-spacing: -5.29px
+  font-family: $sans-serif
+  font-weight: bold
+  font-size: 3em
   color: #FFFFFF
   display: block
+  border-bottom: 2px solid white
   transition: 0.3s
+  &:last-child
+    border: none
 
 .overlay a:hover, .overlay a:focus
   //color: aqua
@@ -58,6 +57,8 @@ svg:hover #burgs
   top: 20px
   right: 45px
   font-size: 60px
+  border: none
+  z-index: 1
   &:hover
     text-decoration: none
     color: $red
