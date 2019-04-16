@@ -8,10 +8,27 @@
 
 <!-- makes the nav work -->
 <script>
-  function openNav() {
-    document.getElementById("myNav").style.width = "50%";
+
+  if (window.matchMedia('screen and (min-width: 768px)').matches) {
+
+    function openNav() {
+      //document.getElementById("myNav").style.maxWidth = "800px";
+      document.getElementById("myNav").style.width = "50%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
   }
-  function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
+
+  else {
+    function openNav() {
+      //document.getElementById("myNav").style.maxWidth = "800px";
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
   }
+
+
 </script>

@@ -8,7 +8,10 @@
 @import et-book.css
 
 body
-  background: #fff
+  background: url("/assets/img/brick.jpg")
+  background-size: 100% auto
+  background-position: center
+  //background: $navy
 main#content
   float: left
   max-width: 500px
@@ -29,10 +32,12 @@ footer
   color: $navy
 
 #container
-  max-width: 944px
+  width: 100%
+  max-width: 880px
   margin: 100px auto
-  padding: 20px 60px
+  padding: 42px 56px
   background: white
+  position: relative
   @media only screen and (max-width : 824px)
     margin: 0 auto
     padding: 2em
@@ -44,14 +49,61 @@ footer
   @media only screen and (max-width : 824px)
     padding: 0
 
+.block
+  width: 100%
+  padding: 2.75rem 9rem
+  margin-top: 1.5rem
+  background-color: #53A4B1
+  color: #fff
+  font-size: 1.5em
+  line-height: 1.75em
 
+.card
+  width: 100%
+  margin: 0
+  float: left
+  @media only screen and (min-width : 880px)
+    margin-top: 2em
+    max-width: 232px
+.card-thumbnail
+  img
+    width: 100%
+    height: auto
+.card-title
+  margin-top: 1.5em
+  h2
+    font-weight: lighter
+    font-size: 1.75rem
+.card-body
+  margin-top: .5em
+  p
+    font-size: 0.875em
 
-#nav
-  padding: 6px
-
-.highlight
-  h1
-    border-bottom: 2px solid $red
+.card-large
+  width: 100%
+  margin: 0
+  float: left
+  @media only screen and (min-width : 880px)
+    max-width: 504px
+    margin-top: 2em
+    margin-left: 2em
+.card-large-thumbnail
+  img
+    width: 100%
+    height: auto
+.card-large-title
+  margin-top: 1.5em
+  h2
+    font-weight: lighter
+    font-size: 1.75rem
+    @media only screen and (min-width : 880px)
+      width: 232px
+.card-large-body
+  margin-top: .5em
+  @media only screen and (min-width : 880px)
+    width: 232px
+  p
+    font-size: 0.875em
 
 .clear
   overflow: auto
