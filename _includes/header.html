@@ -1,8 +1,31 @@
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <a href="#">Work</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+  </div>
+</div>
+
+
 <div id="container" class='clear'>
-<header id="header">
-  <h1><a href="/">{{ site.title }}</a></h1>
-  <span class='small'>{{ site.subtitle }}</span>
-</header>
+  <header id="header">
+    <h1><a href="/">{{ site.title }}</a></h1>
+    <div id="hamburger">
+      <span onclick="openNav()">
+        <svg width="60px" height="44px" viewBox="0 0 60 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Desktop-HD-Copy" fill="#2F2F2F">
+            <g id="burgs">
+              <rect id="top" x="0" y="0" width="60" height="8"></rect>
+              <rect id="bottom" x="0" y="18" width="60" height="8"></rect>
+              <rect id="middle" x="0" y="36" width="60" height="8"></rect>
+            </g>
+          </g>
+        </svg>
+      </span>
+    </div>
+  </header>
 
 
 
